@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bq-to-parquet-exporter"
+version = "0.1.0"
+description = "Bigquery table to parquet exporter"
+authors = ["Jonas Eyob <jonas.eyob@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bq_to_parquet_exporter"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-cloud-bigquery-storage = "^2.19.1"
+pyarrow = "^11.0.0"
+google-cloud-storage = "^2.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
