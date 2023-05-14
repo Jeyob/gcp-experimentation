@@ -21,7 +21,6 @@ def generate_download_signed_url_v4(bucket_name):
         version='v4',
         expiration=timedelta(minutes=15),
         method='GET',
-        
     )
 
     print('Generated GET signed URL: ')
